@@ -6,9 +6,12 @@ function Profile() {
 
     if(!user) return <h1>Not logged in</h1>
   return (
-    <div>Profile: {user.username}
+    <div>
+        
+        Profile : {user.username}
 
-        <h1>More Components</h1>
+        <h1>More components</h1>
+
     </div>
   )
 }
