@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import UserContext from '../context/UserContext'
 
 function Profile() {
+    const {user} = useContext(UserContext)
+
+    if(!user) return <h1>Not logged in</h1>
   return (
-    <div>Profile</div>
+    <div>Profile: {user.username}
+
+        <h1>More Components</h1>
+    </div>
   )
 }
 
