@@ -7,13 +7,12 @@ function Login() {
 
     const {setUser} = useContext(UserContext)
 
+    // Prevents the page from refreshing
     const handleSubmit = (e) => {
-        // Prevents the page from refreshing
-        const handleSubmit = (e) => {
-            e.preventDefault()
-            setUser({username, password})
-        }
+        e.preventDefault()
+        setUser({username, password})
     }
+
   return (
     <div>
         <h2>Login</h2>
